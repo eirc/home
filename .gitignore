@@ -4,5 +4,6 @@
 !.gitignore
 !.gitconfig
 !.gitignore_global
+!.git-completion.bash
 !.vimrc
 !README.md
