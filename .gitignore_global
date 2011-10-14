@@ -1,0 +1,14 @@
+# OS X Finder turdlets
+.DS_Store
+
+# SVN files
+.svn
+
+# Editor backup files
+*~
+*.sw?
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+.rakeTasks
