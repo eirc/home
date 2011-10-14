@@ -21,7 +21,7 @@ set shiftwidth=2
 set autoindent
 set smartindent
 set showmatch
-set cursorline
+"set cursorline
 set ruler
 set number
 filetype indent on
