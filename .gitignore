@@ -2,3 +2,4 @@
 *
 # except:
 !.gitignore
+!.gitconfig

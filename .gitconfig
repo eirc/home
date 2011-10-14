@@ -1,0 +1,9 @@
+[user]
+  name = Eric Cohen
+  email = eirc.eirc@gmail.com
+[core]
+  editor = vim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
