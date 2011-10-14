@@ -4,4 +4,5 @@
 !.gitignore
 !.gitconfig
 !.gitignore_global
+!.vimrc
 !README.md
