@@ -93,6 +93,9 @@ esac
 # Normally this will be included in linux git installations but not in MacOSX
 [[ `type -t __git_ps1 2>&1` != 'function' ]] && [[ -r $HOME/.git-completion.bash ]] && source $HOME/.git-completion.bash
 
+# Rake completion script
+ [[ -r $HOME/.rake-completion.bash ]] && source $HOME/.rake-completion.bash
+
 # aliases
 alias ll="ls -l"
 alias la="ls -a"
