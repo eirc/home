@@ -3,6 +3,7 @@
 # except:
 !.gitignore
 !.bash_profile
+!.bashrc
 !.gitconfig
 !.gitignore_global
 !.git-completion.bash
