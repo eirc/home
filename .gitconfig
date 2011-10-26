@@ -3,7 +3,7 @@
   email = eirc.eirc@gmail.com
 [core]
   editor = vim
-  excludesfile = /Users/eirc/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [alias]
   rb = rebase
   sh = stash
