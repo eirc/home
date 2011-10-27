@@ -39,3 +39,9 @@ set history=50
 set showcmd
 set incsearch
 set wildmenu
+
+command W w
+command Wq wq
+command WQ wq
+command Q q
+
