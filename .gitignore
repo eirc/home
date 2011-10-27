@@ -10,4 +10,5 @@
 !.rake-completion.bash
 !.vimrc
 !.gemrc
+!.irbrc
 !.README.md
