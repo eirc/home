@@ -15,6 +15,7 @@
 .idea/
 *.iml
 .rakeTasks
+.generators
 
 # Rake autocompletion script cache
 .rake
