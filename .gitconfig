@@ -4,6 +4,8 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
+  autocrlf = input
+  safecrlf = true
 [alias]
   rb = rebase
   sh = stash
