@@ -31,3 +31,5 @@
   prompt = false
 [branch "master"]
 	mergeoptions = --no-ff
+[color]
+  ui = true
