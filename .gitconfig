@@ -30,6 +30,6 @@
 [difftool]
   prompt = false
 [branch "master"]
-	mergeoptions = --no-ff
+  mergeoptions = --no-ff
 [color]
   ui = true
