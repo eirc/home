@@ -33,3 +33,5 @@
   mergeoptions = --no-ff
 [color]
   ui = true
+[format]
+  pretty = format:%Cred%h %Creset%s (%Cblue%aN%Creset)
