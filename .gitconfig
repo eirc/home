@@ -23,7 +23,7 @@
   whois = !sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
   ignored = ls-files --others -i --exclude-standard
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --topo-order
+  lg = log --graph --oneline --decorate --abbrev-commit --date=relative --topo-order --all
 [diff]
   tool = vimdiff
 [difftool]
@@ -32,5 +32,5 @@
   mergeoptions = --no-ff
 [color]
   ui = true
-[format]
-  pretty = format:%Cred%h %Creset%s (%Cblue%aN%Creset)
+[log]
+  decorate = short
