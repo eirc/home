@@ -17,7 +17,6 @@
   df = diff
   fa = fetch --all
   ri = rebase --interactive --autosquash
-  lg = log -p
   fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   who = shortlog -s --
