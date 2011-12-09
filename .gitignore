@@ -12,3 +12,5 @@
 !.gemrc
 !.irbrc
 !.README.md
+!.subversion
+!.subversion/config
