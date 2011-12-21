@@ -17,8 +17,5 @@
 .rakeTasks
 .generators
 
-# Rake autocompletion script cache
-.rake
-
 # Rubinius files
 .rbx/
