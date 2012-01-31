@@ -28,7 +28,8 @@
   tool = vimdiff
 [difftool]
   prompt = false
-[branch "master"]
+[branch]
+  autosetuprebase = always
   mergeoptions = --no-ff
 [color]
   ui = true
