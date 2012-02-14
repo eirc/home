@@ -15,6 +15,7 @@
   br = branch
   co = checkout
   df = diff
+  wdf = diff --word-diff
   fa = fetch --all
   ri = rebase --interactive --autosquash
   fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
