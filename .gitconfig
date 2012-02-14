@@ -9,7 +9,6 @@
 [alias]
   rb = rebase
   sh = stash
-  sta = stash
   st = status
   ci = commit
   br = branch
