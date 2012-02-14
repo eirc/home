@@ -11,6 +11,7 @@
   sh = stash
   st = status
   ci = commit
+  cm = commit -m
   br = branch
   co = checkout
   df = diff
