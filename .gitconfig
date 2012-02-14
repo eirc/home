@@ -24,7 +24,7 @@
   whois = !sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
   ignored = ls-files --others -i --exclude-standard
-  lg = log --graph --oneline --decorate --abbrev-commit --date=relative --topo-order --all
+  lg = log --graph --oneline --decorate --topo-order --all
 [diff]
   tool = vimdiff
 [difftool]
