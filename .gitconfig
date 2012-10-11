@@ -32,6 +32,8 @@
 [branch]
   autosetuprebase = always
   mergeoptions = --no-ff
+[merge]
+  ff = false
 [color]
   ui = true
 [log]
