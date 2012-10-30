@@ -84,8 +84,6 @@ case `uname` in
     export JAVA_HOME=/Library/Java/Home
     # Set greek
     export LC_CTYPE="el_GR.UTF-8"
-    # MySQL lib path
-    export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
     ;;
 esac
 
