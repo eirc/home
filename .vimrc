@@ -8,7 +8,7 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Colors
 syntax on
-colorscheme desert
+colorscheme darkblue
 set background=dark
 set hlsearch
 
