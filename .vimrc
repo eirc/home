@@ -26,6 +26,10 @@ set ruler
 set number
 filetype indent on
 
+" Highligh special characters
+set list
+set lcs=tab:⫦—,nbsp:.,trail:.,extends:▸,precedes:◂
+
 " File settings
 set backup
 set autoread
