@@ -92,7 +92,7 @@ esac
 [[ `type -t __git_ps1 2>&1` != 'function' ]] && [[ -r $HOME/.git-completion.bash ]] && source $HOME/.git-completion.bash
 
 # Rake completion script
- [[ -r $HOME/.rake-completion.bash ]] && source $HOME/.rake-completion.bash
+[[ -r $HOME/.rake-completion.bash ]] && source $HOME/.rake-completion.bash
 
 # aliases
 alias ll="ls -l"
