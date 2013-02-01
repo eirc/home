@@ -8,3 +8,6 @@ export DISPLAY=:0
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+# Homebrew
+export PATH=/usr/local/sbin:$PATH
+
