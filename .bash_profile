@@ -9,5 +9,5 @@ export DISPLAY=:0
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # Homebrew
-export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
