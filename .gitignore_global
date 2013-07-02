@@ -19,3 +19,7 @@
 
 # Rubinius files
 .rbx/
+
+# Vagrant
+.vagrant/
+
