@@ -94,6 +94,9 @@ esac
 # Rake completion script
 [[ -r $HOME/.rake-completion.bash ]] && source $HOME/.rake-completion.bash
 
+# Vagrant completion script
+[[ -r $HOME/.vagrant-completion.bash ]] && source $HOME/.vagrant-completion.bash
+
 # aliases
 alias ll="ls -l"
 alias la="ls -a"

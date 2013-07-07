@@ -8,6 +8,7 @@
 !.gitignore_global
 !.git-completion.bash
 !.rake-completion.bash
+!.vagrant-completion.bash
 !.vimrc
 !.gemrc
 !.irbrc
