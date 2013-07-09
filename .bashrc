@@ -81,7 +81,6 @@ case `uname` in
   "Darwin" )
     # Coloured LS
     alias ls='ls -G'
-    setopt CLICOLOR  # same as 'alias ls=ls -G'
     export LSCOLORS=Exfxcxdxbxegedabagacad
     # JAVA home
     export JAVA_HOME=/Library/Java/Home
