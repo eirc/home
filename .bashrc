@@ -145,9 +145,10 @@ unset PS1_USER PS1_HOST PS1_DIR PS1_RVM PS1_GIT
 # set the title of the terminal to the folder you are into 
 export PROMPT_COMMAND='echo -ne "\033]0;`pwd | xargs basename`\007"'
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
