@@ -99,6 +99,11 @@ esac
 # Vagrant completion script
 [[ -r $HOME/.vagrant-completion.bash ]] && source $HOME/.vagrant-completion.bash
 
+# More completion from brew
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # aliases
 alias ll="ls -l"
 alias la="ls -a"
