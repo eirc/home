@@ -7,7 +7,7 @@
 [alias]
   rb = rebase
   sh = stash
-  st = status
+  st = status -sb
   ci = commit
   cm = commit -m
   br = branch
