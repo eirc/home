@@ -142,7 +142,7 @@ PS1_USER="\u"
 PS1_HOST=`hostname -s`
 PS1_DIR="\w"
 [[ -s $HOME/.rvm/bin/rvm-prompt ]]          && PS1_RVM=" (\$($HOME/.rvm/bin/rvm-prompt i v g))"
-[[ `type -t __git_ps1 2>&1` = 'function' ]] && PS1_GIT=" (\$(__git_ps1 %s))"
+[[ `type -t __git_ps1 2>&1` = 'function' ]] && PS1_GIT="\$(__git_ps1 ' (%s)')"
 
 export PS1="$COLOR_OFF[$PS1_USER@$PS1_HOST $GREEN$PS1_DIR$PURPLE$PS1_RVM$RED$PS1_GIT$COLOR_OFF] "
 unset PS1_USER PS1_HOST PS1_DIR PS1_RVM PS1_GIT
