@@ -26,7 +26,7 @@
   ignored = ls-files --others -i --exclude-standard
   lg = log --graph --oneline --decorate --topo-order --all
 [diff]
-  tool = vimdiff
+  tool = Kaleidoscope
 [difftool]
   prompt = false
 [branch]
@@ -34,6 +34,9 @@
   mergeoptions = --no-ff
 [merge]
   ff = false
+  tool = Kaleidoscope
+[mergetool]
+  prompt = false
 [color]
   ui = true
 [log]
@@ -43,4 +46,9 @@
   path = 
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
