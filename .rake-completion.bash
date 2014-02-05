@@ -1,14 +1,25 @@
-# bash-completion for rake tasks
+#!/bin/bash
+# Bash completion support for Rake, Ruby Make.
 
-export COMP_WORDBREAKS=${COMP_WORDBREAKS/\:/}
-_rake() {
-  if [ -f Rakefile ]; then
-    if [ ! -f ._rake~ ]; then
-      rake --tasks 2>/dev/null | cut -d ' ' -f 2 > ._rake~
+# This messes up COMP_WORDBREAKS throughout the system.
+# Fixing it to restrict changes to rakecomplete only.
+# export COMP_WORDBREAKS=${COMP_WORDBREAKS/\:/}
+
+_rakecomplete() {
+    local cur
+    _get_comp_words_by_ref -n : cur
+    rakefile=`find . -maxdepth 1 -iname Rakefile`
+    if [ "$rakefile" != "" ]; then
+        recent=`ls -t .rake_tasks~ ${rakefile} **/*.rake 2> /dev/null | head -n 1`
+        if [[ $recent != '.rake_tasks~' ]]; then
+            rake --silent --prereqs | grep "rake" | cut -d " " -f 2 > .rake_tasks~
+        fi
+        COMPREPLY=($(compgen -W "`cat .rake_tasks~`" -- "$cur"))
+        # remove colon containing prefix from COMPREPLY items
+        __ltrim_colon_completions "$cur"
+        return 0
     fi
-    COMPREPLY=($(compgen -W "`cat ._rake~`" -- ${COMP_WORDS[COMP_CWORD]}))
-  fi
-  return 0
 }
 
-complete -o default -o nospace -F _rake rake
+complete -o default -o nospace -F _rakecomplete rake
+
