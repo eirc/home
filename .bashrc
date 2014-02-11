@@ -147,6 +147,9 @@ PS1_DIR="\w"
 export PS1="$COLOR_OFF[$PS1_USER@$PS1_HOST $GREEN$PS1_DIR$PURPLE$PS1_RVM$RED$PS1_GIT$COLOR_OFF] "
 unset PS1_USER PS1_HOST PS1_DIR PS1_RVM PS1_GIT
 
+# always have ARCHFLAGS set for 64 bit systems
+export ARCHFLAGS="-arch x86_64"
+
 # set the title of the terminal to the folder you are into 
 export PROMPT_COMMAND='echo -ne "\033]0;`pwd | xargs basename`\007"'
 
