@@ -20,6 +20,7 @@
   fr = !git stash && git ri $1 && git stash pop && git reset
   fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
   squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+  fix = !sh -c 'git add . && git stash && git rebase --interactive --autosquash origin/$(git rev-parse --abbrev-ref HEAD) && git stash pop && git reset'
   who = shortlog -s --
   whois = !sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
