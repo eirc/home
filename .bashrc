@@ -157,9 +157,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;`pwd | xargs basename`\007"'
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # Homebrew
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
