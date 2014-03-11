@@ -114,6 +114,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 alias .......="cd ../../../../../.."
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # History Controls
 shopt -s histappend # append to the history file, don't overwrite it
