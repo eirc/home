@@ -160,6 +160,14 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Homebrew
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
+# Vagrant
+# search an array of possible homes for vagrant and set the first that exists
+# and is a directory to VAGRANT_HOME env var
+for directory in "/Volumes/320/Vagrant"
+do
+  [[ -d $directory ]] && { export VAGRANT_HOME=$directory; break; }
+done
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
