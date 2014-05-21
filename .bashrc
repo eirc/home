@@ -160,6 +160,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Homebrew
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
+# Home bin path
+[[ -d "$HOME/Applications/bin" ]] && export PATH="$HOME/Applications/bin:$PATH"
+
 # git workdir contrib
 [[ -x `which brew` ]] && [[ -n `brew ls --versions git` ]] && export PATH="`brew --prefix git`/share/git-core/contrib/workdir:$PATH"
 
