@@ -16,3 +16,6 @@
 !.subversion
 !.subversion/config
 !.railsrc
+!.gnupg
+!.gnupg/gpg.conf
+
