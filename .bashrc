@@ -160,6 +160,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Homebrew
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
+# git workdir contrib
+[[ -x `which brew` ]] && [[ -n `brew ls --versions git` ]] && export PATH="`brew --prefix git`/share/git-core/contrib/workdir:$PATH"
+
 # Vagrant
 # search an array of possible homes for vagrant and set the first that exists
 # and is a directory to VAGRANT_HOME env var
