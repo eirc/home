@@ -166,6 +166,11 @@ export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 # git workdir contrib
 [[ -x `which brew` ]] && [[ -n `brew ls --versions git` ]] && export PATH="`brew --prefix git`/share/git-core/contrib/workdir:$PATH"
 
+# Add brew gettext binaries to path.
+# The formula is keg only (ie not linked) due to library issues with the osx provided gettext.
+# The binaries can be "safely" linked though so lets do that.
+[[ -x `which brew` ]] && [[ -n `brew ls --versions gettext` ]] && export PATH="`brew --prefix gettext`/bin:$PATH"
+
 # Vagrant
 # search an array of possible homes for vagrant and set the first that exists
 # and is a directory to VAGRANT_HOME env var
