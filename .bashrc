@@ -100,9 +100,7 @@ esac
 [[ -r $HOME/.vagrant-completion.bash ]] && source $HOME/.vagrant-completion.bash
 
 # More completion from brew
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+[[ -x `which brew` ]] && [[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
 
 # pass completion
 [[ -r "/usr/local/etc/bash_completion.d/password-store" ]] && source "/usr/local/etc/bash_completion.d/password-store"
