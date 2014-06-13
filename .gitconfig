@@ -4,7 +4,7 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
-  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  pager = `~/.git-pager`/diff-highlight | less
 [alias]
   rb = rebase
   sh = stash

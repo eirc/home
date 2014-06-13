@@ -5,6 +5,7 @@
 !.bash_profile
 !.bashrc
 !.gitconfig
+!.git-pager
 !.gitignore_global
 !.git-completion.bash
 !.rake-completion.bash

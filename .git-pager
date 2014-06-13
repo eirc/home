@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+CONTRIB_PATH="contrib/diff-highlight/"
+LINUX_PATH="/usr/share/doc/git/${CONTRIB_PATH}"
+
+if [[ -r $LINUX_PATH ]]; then
+  echo $LINUX_PATH
+elif [[ -x `which brew` ]]; then
+  echo "`brew --prefix git`/share/git-core/${CONTRIB_PATH}"
+fi
+
