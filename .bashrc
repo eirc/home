@@ -104,6 +104,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# pass completion
+[[ -r "/usr/local/etc/bash_completion.d/password-store" ]] && source "/usr/local/etc/bash_completion.d/password-store"
+
 # aliases
 alias ll="ls -l"
 alias la="ls -a"
