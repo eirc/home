@@ -140,7 +140,7 @@ SSH_ENV="$HOME/.ssh/environment"
 # Create a fancy Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-PS1_USER="\u"
+[[ $UID == 0 ]] && PS1_USER="$ON_RED\u$COLOR_OFF" || PS1_USER="\u"
 PS1_HOST=`hostname -s`
 PS1_DIR="\w"
 [[ -s $HOME/.rvm/bin/rvm-prompt ]]          && PS1_RVM=" (\$($HOME/.rvm/bin/rvm-prompt s i v g))"
