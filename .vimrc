@@ -11,13 +11,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'carlobaldassi/ConqueTerm'
-Plugin 'tpope/vim-fugitive'
+
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-bundler'
+Plugin 'carlobaldassi/ConqueTerm'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
