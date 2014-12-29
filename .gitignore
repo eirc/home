@@ -20,4 +20,5 @@
 !.gnupg
 !.gnupg/gpg.conf
 !.tm_properties
+!.tmux.conf
 
