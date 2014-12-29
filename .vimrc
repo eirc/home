@@ -12,7 +12,12 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'carlobaldassi/ConqueTerm'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-bundler'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rodjek/vim-puppet'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,6 +32,7 @@ syntax on
 colorscheme darkblue
 set background=dark
 set hlsearch
+highlight SignColumn ctermbg=black
 
 " Tabs
 set expandtab
