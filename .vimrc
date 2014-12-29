@@ -71,6 +71,13 @@ command Wq wq
 command WQ wq
 command Q q
 
+" NERDTree
+" How can I open a NERDTree automatically when vim starts up if no files were specified?
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Show hidden files by default
+let NERDTreeShowHidden = 1
+
 " Shamelessly stolen from https://gist.github.com/tejr/5890634
 "
 " Prevent various Vim features from keeping the contents of pass(1) password
