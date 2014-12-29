@@ -4,6 +4,21 @@ scriptencoding utf-8
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'carlobaldassi/ConqueTerm'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
@@ -26,7 +41,6 @@ set showmatch
 "set cursorline
 set ruler
 set number
-filetype indent on
 
 " Highligh special characters
 set list
@@ -98,4 +112,3 @@ if has('viminfo')
         augroup END
     endif
 endif
-
