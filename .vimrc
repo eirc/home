@@ -59,6 +59,7 @@ set backspace=indent,eol,start
 set encoding=UTF8
 set bin
 set noeol
+set hidden
 
 " Commands
 set history=50
