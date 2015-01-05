@@ -180,6 +180,15 @@ do
   [[ -d $directory ]] && { export VAGRANT_HOME=$directory; break; }
 done
 
+# This is something smart
+function pass-key-add {
+  pass "Keys/$1/id_rsa" > "$HOME/.ssh/pass-key-$1-id_rsa"
+  chmod 600 "$HOME/.ssh/pass-key-$1-id_rsa"
+  pass -c "Keys/$1/password"
+  ssh-add "$HOME/.ssh/pass-key-$1-id_rsa"
+  rm "$HOME/.ssh/pass-key-$1-id_rsa"
+}
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
