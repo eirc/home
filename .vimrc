@@ -85,6 +85,8 @@ let NERDTreeIgnore = ['\.swp$', '\~$']
 " CTRLP
 " Find hidden files
 let g:ctrlp_show_hidden = 1
+" Smart fast ctrlp command https://github.com/kien/ctrlp.vim/issues/273
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " Shamelessly stolen from https://gist.github.com/tejr/5890634
 "
