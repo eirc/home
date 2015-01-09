@@ -77,6 +77,12 @@ command Wq wq
 command WQ wq
 command Q q
 
+" Disable arrow keys!
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 " NERDTree
 " How can I open a NERDTree automatically when vim starts up if no files were specified?
 autocmd StdinReadPre * let s:std_in=1
