@@ -50,6 +50,7 @@ set smartindent
 set showmatch
 "set cursorline
 set ruler
+set relativenumber
 set number
 
 " Highligh special characters
