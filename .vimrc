@@ -75,10 +75,10 @@ set showcmd
 set incsearch
 set wildmenu
 
-command W w
-command Wq wq
-command WQ wq
-command Q q
+command! W w
+command! Wq wq
+command! WQ wq
+command! Q q
 
 " Disable arrow keys!
 noremap <Up> <nop>
