@@ -13,6 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 Plugin 'carlobaldassi/ConqueTerm'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
@@ -97,6 +98,10 @@ let NERDTreeIgnore = ['\.swp$', '\~$', '\.DS_Store']
 let g:ctrlp_show_hidden = 1
 " Smart fast ctrlp command https://github.com/kien/ctrlp.vim/issues/273
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
 
 " Shamelessly stolen from https://gist.github.com/tejr/5890634
 "
