@@ -11,6 +11,9 @@
 !.rake-completion.bash
 !.vagrant-completion.bash
 !.vimrc
+!.vim
+!.vim/colors
+!.vim/colors/codeschool.vim
 !.gemrc
 !.irbrc
 !.README.md

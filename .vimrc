@@ -37,8 +37,10 @@ inoremap <C-U> <C-G>u<C-U>
 syntax on
 colorscheme darkblue
 set background=dark
-set hlsearch
+color codeschool
+highlight LineNr ctermbg=black
 highlight SignColumn ctermbg=black
+set hlsearch
 
 " Tabs
 set expandtab
