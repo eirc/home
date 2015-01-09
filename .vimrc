@@ -39,6 +39,7 @@ colorscheme darkblue
 set background=dark
 color codeschool
 highlight LineNr ctermbg=black
+highlight CursorLine ctermbg=18
 highlight SignColumn ctermbg=black
 set hlsearch
 
