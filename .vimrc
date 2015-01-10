@@ -66,7 +66,7 @@ set backup
 set autoread
 set backspace=indent,eol,start
 set encoding=UTF8
-set bin
+"set bin
 set noeol
 set hidden
 
