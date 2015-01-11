@@ -80,6 +80,7 @@ set incsearch
 set ignorecase
 set wildmenu
 
+" alias common write and quit commands to case insensitive variants
 command! W w
 command! Wq wq
 command! WQ wq
