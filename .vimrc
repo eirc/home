@@ -88,6 +88,9 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+" map double esc to clear search highlight
+nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
+
 " NERDTree
 " How can I open a NERDTree automatically when vim starts up if no files were specified?
 "autocmd StdinReadPre * let s:std_in=1
