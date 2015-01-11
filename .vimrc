@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'carlobaldassi/ConqueTerm'
+Plugin 'haya14busa/incsearch.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rodjek/vim-puppet'
@@ -113,6 +114,11 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+" incsearch plugin
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 " Shamelessly stolen from https://gist.github.com/tejr/5890634
 "
