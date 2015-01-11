@@ -79,6 +79,7 @@ set history=50
 set showcmd
 set incsearch
 set ignorecase
+set smartcase
 set wildmenu
 
 " alias common write and quit commands to case insensitive variants
