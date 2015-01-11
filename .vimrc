@@ -75,6 +75,7 @@ set hidden
 set history=50
 set showcmd
 set incsearch
+set ignorecase
 set wildmenu
 
 command! W w
