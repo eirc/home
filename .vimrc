@@ -101,6 +101,9 @@ let NERDTreeShowHidden = 1
 " Hide vim swp files
 let NERDTreeIgnore = ['\.swp$', '\~$', '\.DS_Store']
 
+map <Leader>t :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
+
 " CTRLP
 " Find hidden files
 let g:ctrlp_show_hidden = 1
