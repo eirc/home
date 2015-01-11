@@ -58,6 +58,7 @@ set cursorline
 set ruler
 "set relativenumber
 set number
+set scrolloff=8
 
 " Highligh special characters
 set list
