@@ -35,12 +35,12 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Colors
 syntax on
-colorscheme darkblue
-set background=dark
-color codeschool
-highlight LineNr ctermbg=black
+colorscheme codeschool
+highlight LineNr ctermbg=Black
 highlight CursorLine ctermbg=18
-highlight SignColumn ctermbg=black
+highlight SignColumn ctermbg=Black
+highlight IncSearch ctermbg=Yellow
+highlight Search ctermbg=DarkYellow
 set hlsearch
 
 " Tabs
