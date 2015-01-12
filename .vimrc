@@ -14,7 +14,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
-Plugin 'carlobaldassi/ConqueTerm'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
