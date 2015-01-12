@@ -24,4 +24,6 @@
 !.gnupg/gpg.conf
 !.tm_properties
 !.tmux.conf
+!.bin
+!.bin/gitstatus
 

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+commands=(
+'git log --branches --not --remotes --color'
+'git -c color.status=always st'
+)
+
+out=''
+
+for command in "${commands[@]}"; do
+  out="$out$($command)\n\n"
+done
+
+echo -e "\\033c$out"
+
