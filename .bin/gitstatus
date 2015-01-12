@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 commands=(
-'git log --branches --not --remotes --color'
-'git -c color.status=always st'
+'git log --oneline --branches --not --remotes --color'
+'git -c color.status=always status --short --branch'
 )
 
 out=''
