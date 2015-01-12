@@ -40,8 +40,8 @@ highlight LineNr ctermbg=Black
 highlight CursorLine ctermbg=238
 highlight NonText ctermbg=0
 highlight SignColumn ctermbg=Black
-highlight IncSearch ctermbg=160
-highlight Search ctermbg=226
+highlight IncSearch ctermfg=15 ctermbg=160 cterm=NONE
+highlight Search ctermfg=15 ctermbg=160 cterm=NONE
 set hlsearch
 
 " Tabs
