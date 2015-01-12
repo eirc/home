@@ -43,6 +43,7 @@ highlight NonText ctermbg=0
 highlight SignColumn ctermbg=Black
 highlight IncSearch ctermfg=15 ctermbg=142 cterm=NONE
 highlight Search ctermfg=15 ctermbg=160 cterm=NONE
+highlight SpecialKey ctermfg=0 ctermbg=9 cterm=NONE
 set hlsearch
 
 " Tabs
