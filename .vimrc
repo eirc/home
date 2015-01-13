@@ -125,6 +125,10 @@ map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+" Use old regexp engine because new one is very slow for ruby files
+" http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
+set regexpengine=1
+
 " Shamelessly stolen from https://gist.github.com/tejr/5890634
 "
 " Prevent various Vim features from keeping the contents of pass(1) password
