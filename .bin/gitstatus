@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
 commands=(
-'git log --oneline --branches --not --remotes --color'
 'git -c color.status=always status --short --branch'
+'git log --oneline --branches --not --remotes --color'
 )
 
-out=''
+function display_status {
+  out=''
 
-for command in "${commands[@]}"; do
-  out="$out$($command)\n\n"
+  for command in "${commands[@]}"; do
+    out="$out$($command)\n\n"
+  done
+
+  echo -e "\\033c$out"
+}
+
+while :
+do
+  display_status
+  sleep 1
 done
-
-echo -e "\\033c$out"
 
