@@ -12,6 +12,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'ruby-matchit'
+
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'haya14busa/incsearch.vim'
@@ -91,6 +93,9 @@ noremap <Right> <nop>
 
 " map double esc to clear search highlight
 nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
+
+" Add matchit plugin for more than one char matches
+runtime macros/matchit.vim
 
 " NERDTree
 " How can I open a NERDTree automatically when vim starts up if no files were specified?
