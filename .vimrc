@@ -38,8 +38,14 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Colors
 syntax on
-set background=light
-colorscheme solarized
+colorscheme codeschool
+highlight LineNr ctermbg=Black
+highlight CursorLine ctermbg=238
+highlight NonText ctermbg=0
+highlight SignColumn ctermbg=Black
+highlight IncSearch ctermfg=15 ctermbg=142 cterm=NONE
+highlight Search ctermfg=15 ctermbg=160 cterm=NONE
+highlight SpecialKey ctermfg=0 ctermbg=9 cterm=NONE
 set hlsearch
 
 " Tabs
