@@ -19,6 +19,7 @@ Plugin 'bling/vim-airline'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux-plugins/vim-tmux'
@@ -116,10 +117,10 @@ map <Leader>t :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>
 
 " CTRLP
-" Find hidden files
-let g:ctrlp_show_hidden = 1
-" Smart fast ctrlp command https://github.com/kien/ctrlp.vim/issues/273
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+let g:ctrlp_user_command = 'ag %s --hidden --files-with-matches --nocolor -g ""'
+" ag is fast enough that CtrlP doesn't need to cache
+let g:ctrlp_use_caching = 0
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
