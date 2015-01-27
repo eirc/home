@@ -26,4 +26,5 @@
 !.tmux.conf
 !.bin
 !.bin/gitstatus
+!.zshrc
 
