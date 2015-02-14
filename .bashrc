@@ -186,7 +186,7 @@ function pass-key-add {
   chmod 600 "$HOME/.ssh/pass-key-$1-id_rsa"
   pass -c "Keys/$1/password"
   ssh-add "$HOME/.ssh/pass-key-$1-id_rsa"
-  rm "$HOME/.ssh/pass-key-$1-id_rsa"
+  rm -f "$HOME/.ssh/pass-key-$1-id_rsa"
 }
 
 # RVM
