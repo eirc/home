@@ -193,3 +193,4 @@ function pass-key-add {
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
