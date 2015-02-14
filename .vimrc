@@ -64,6 +64,8 @@ set ruler
 "set relativenumber
 set number
 set scrolloff=8
+set textwidth=80
+set colorcolumn=+1
 
 " Highligh special characters
 set list
