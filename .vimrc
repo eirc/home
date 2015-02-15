@@ -119,9 +119,9 @@ map <Leader>t :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>
 
 " CTRLP
-" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s --hidden --files-with-matches --nocolor -g ""'
-" ag is fast enough that CtrlP doesn't need to cache
+" Smart fast ctrlp command https://github.com/kien/ctrlp.vim/issues/273
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" git ls-files is fast enough that CtrlP doesn't need to cache
 let g:ctrlp_use_caching = 0
 
 " Airline
