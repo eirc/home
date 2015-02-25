@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'ruby-matchit'
 
 Plugin 'airblade/vim-gitgutter'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'kchmck/vim-coffee-script'
@@ -39,14 +40,9 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Colors
 syntax on
-colorscheme codeschool
-highlight LineNr ctermbg=Black
-highlight CursorLine ctermbg=238
-highlight NonText ctermbg=0
-highlight SignColumn ctermbg=Black
-highlight IncSearch ctermfg=15 ctermbg=142 cterm=NONE
-highlight Search ctermfg=15 ctermbg=160 cterm=NONE
-highlight SpecialKey ctermfg=0 ctermbg=9 cterm=NONE
+set background=light
+colorscheme solarized
+highlight SignColumn ctermbg=LightGray
 set hlsearch
 
 " Tabs
