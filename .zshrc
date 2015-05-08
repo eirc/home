@@ -87,11 +87,22 @@ export KEYTIMEOUT=1
 
 # This is something smart
 function pass-key-add {
-  pass "Keys/$1/id_rsa" > "$HOME/.ssh/pass-key-$1-id_rsa"
-  chmod 600 "$HOME/.ssh/pass-key-$1-id_rsa"
-  pass -c "Keys/$1/password"
-  ssh-add "$HOME/.ssh/pass-key-$1-id_rsa"
-  rm -f "$HOME/.ssh/pass-key-$1-id_rsa"
+  # try to copy password
+  password="$1/password"
+  [ -f "$HOME/.password-store/$password.gpg" ] && pass -c "$password"
+
+  # find id_rsa or key.pem file
+  id_rsa="$1/id_rsa"
+  [ -f "$HOME/.password-store/$id_rsa.gpg" ] && key="$id_rsa"
+  pem="$1/key.pem"
+  [ -f "$HOME/.password-store/$pem.gpg" ] && key="$pem"
+
+  # decrypt and add key
+  base=`basename $1`
+  pass "$key" > "/tmp/$base"
+  chmod 600 "/tmp/$base"
+  ssh-add "/tmp/$base"
+  rm -f "/tmp/$base"
 }
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
