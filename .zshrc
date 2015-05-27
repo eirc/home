@@ -68,6 +68,8 @@ source $ZSH/oh-my-zsh.sh
 bindkey -e
 setopt nocorrectall
 
+unsetopt nomatch
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
