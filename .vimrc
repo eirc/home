@@ -41,6 +41,7 @@ inoremap <C-U> <C-G>u<C-U>
 " Colors
 syntax on
 set background=light
+let g:solarized_termcolors=256
 colorscheme solarized
 highlight SignColumn ctermbg=LightGray
 set hlsearch
