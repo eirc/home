@@ -85,6 +85,10 @@ unsetopt nomatch
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+unalias rm
+unalias cp
+unalias mv
+
 export KEYTIMEOUT=1
 
 # This is something smart
