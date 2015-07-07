@@ -111,4 +111,20 @@ function pass-key-add {
   rm -f "/tmp/$base"
 }
 
+bindkey "${terminfo[kcuu1]}" up-line-or-local-history
+bindkey "${terminfo[kcud1]}" down-line-or-local-history
+
+up-line-or-local-history() {
+    zle set-local-history 1
+    zle up-line-or-history
+    zle set-local-history 0
+}
+zle -N up-line-or-local-history
+down-line-or-local-history() {
+    zle set-local-history 1
+    zle down-line-or-history
+    zle set-local-history 0
+}
+zle -N down-line-or-local-history
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
