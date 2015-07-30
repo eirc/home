@@ -111,4 +111,6 @@ function pass-key-add {
   rm -f "/tmp/$base"
 }
 
+setopt no_share_history
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
