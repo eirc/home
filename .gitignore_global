@@ -25,3 +25,5 @@
 # Vagrant
 .vagrant/
 
+.bundle
+
