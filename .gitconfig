@@ -26,6 +26,7 @@
   whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
   ignored = ls-files --others -i --exclude-standard
   lg = log --graph --oneline --decorate --topo-order --all
+  slg = !git log --oneline --graph --decorate --color $(git reflog | awk '{print $1}') $(git fsck --unreachable | grep 'unreachable commit' | awk '{print $3}') $(git fsck --lost-found | grep 'dangling commit' | awk '{print $3}')
 [diff]
   tool = Kaleidoscope
 [difftool]
