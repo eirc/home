@@ -27,4 +27,6 @@
 !.bin
 !.bin/gitstatus
 !.zshrc
+!.gnupg
+!.gnupg/gpg-agent.conf
 
